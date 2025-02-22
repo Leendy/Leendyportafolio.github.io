@@ -57,9 +57,11 @@ img {
 /** Header **/
 .header {
     background-color: #33b8ff;
+    background-image: url(../img/22001.jpg);
 }
  .header {
     background-color: #33b8ff;
+    background-image: url(../img/22001.jpg);
 }
 .header {
     height: 60rem;
@@ -127,13 +129,17 @@ img {
     text-align: center;
     font-weight: 500;
     font-family: "Oswald", sans-serif;  
+    color: #fdf500;
 }
 .sobre-mi{
-    background-image: url(../img/4180f31b506112ef5634efe9320a522c.jpg) ;
-    background-size: contain ;
+    background-image: url(../img/19187761.jpg) ;
     background-repeat: no-repeat;
-    background-size: 150rem 100rem;
-    background-size: 2000px 2000px;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  
     
 }
 .descripcion{
@@ -141,6 +147,7 @@ img {
     margin: 5rem;
     margin-bottom: 0;
     height: 350px;
+    color: #e1e1e1;
 }
 
 /** hablididades **/
@@ -189,3 +196,42 @@ img {
 
 
 
+/* Existing CSS content */
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+        line-height: 1.5; /* Ajustar el interlineado */
+    }
+
+    .header__texto h2 {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    .header__texto h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo */
+    }
+
+    .descripcion {
+        font-size: 1.5rem; /* Reducir el tamaño del texto */
+        margin: 1rem; /* Ajustar el margen */
+        margin-bottom: 0rem;
+    }
+
+    .img {
+        flex-direction: column; /* Cambiar la dirección de las imágenes a vertical */
+        align-items: center; /* Centrar las imágenes */
+    }
+
+    .img img {
+        width: 100%; /* Ajustar el ancho de las imágenes */
+        margin-bottom: 1rem; /* Añadir espacio entre las imágenes */
+    }
+
+    .Certi, .Certis {
+        width: 100%; /* Ajustar el ancho de los certificados */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+}
